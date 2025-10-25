@@ -154,7 +154,6 @@ poetry.toml
 .windsurf/
 
 #ARMv7
-armv7/build/
 armv7/models/
 armv7/venv/
 armv7/hf-venv/
