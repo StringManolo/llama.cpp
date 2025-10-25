@@ -10,6 +10,11 @@
 
 LLM inference in C/C++
 
+
+## EXTRA FOR ARMV7
+
+This fork of llama.cpp includes scripts for armv7. Alongside this scripts that allow you to make your own build, a premade build is include (this is a list of precompiled for Alpine Linux Armv7 in a Proot-Distro Termux enviroment). Find them at releases or armv7/build/
+
 ## Recent API changes
 
 - [Changelog for `libllama` API](https://github.com/ggml-org/llama.cpp/issues/9289)
