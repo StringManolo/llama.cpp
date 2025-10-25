@@ -1,0 +1,1 @@
+/usr/bin/ccache  g++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-barrier.dir/link.d "CMakeFiles/test-barrier.dir/test-barrier.cpp.o" "CMakeFiles/test-barrier.dir/get-model.cpp.o" -o ../bin/test-barrier  -Wl,-rpath,/root/llama.cpp/armv7/build/bin: ../common/libcommon.a /usr/lib/libcurl.so ../bin/libllama.so ../bin/libggml.so ../bin/libggml-cpu.so ../bin/libggml-base.so

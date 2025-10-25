@@ -1,0 +1,1 @@
+/usr/bin/ccache  gcc -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/test-c.dir/link.d "CMakeFiles/test-c.dir/test-c.c.o" -o ../bin/test-c  -Wl,-rpath,/root/llama.cpp/armv7/build/bin ../bin/libllama.so ../bin/libggml.so ../bin/libggml-cpu.so ../bin/libggml-base.so
