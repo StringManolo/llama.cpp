@@ -1,0 +1,1 @@
+/usr/bin/ccache  g++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/llama-gguf.dir/link.d "CMakeFiles/llama-gguf.dir/gguf.cpp.o" -o ../../bin/llama-gguf  -Wl,-rpath,/root/llama.cpp/armv7/build/bin: ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so

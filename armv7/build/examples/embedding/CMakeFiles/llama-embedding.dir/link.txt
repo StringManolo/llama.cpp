@@ -1,0 +1,1 @@
+/usr/bin/ccache  g++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/llama-embedding.dir/link.d "CMakeFiles/llama-embedding.dir/embedding.cpp.o" -o ../../bin/llama-embedding  -Wl,-rpath,/root/llama.cpp/armv7/build/bin: ../../common/libcommon.a ../../bin/libllama.so ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so /usr/lib/libcurl.so

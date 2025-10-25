@@ -1,0 +1,1 @@
+/usr/bin/ccache  g++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/llama-cli.dir/link.d "CMakeFiles/llama-cli.dir/main.cpp.o" -o ../../bin/llama-cli  -Wl,-rpath,/root/llama.cpp/armv7/build/bin: ../../common/libcommon.a ../../bin/libllama.so ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so /usr/lib/libcurl.so

@@ -1,0 +1,1782 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Linux - 6.2.1-PRoot-Distro - armv8l
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/ccache gcc
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /root/llama.cpp/armv7/build/CMakeFiles/3.31.7/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/ccache g++
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /root/llama.cpp/armv7/build/CMakeFiles/3.31.7/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d2eb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d2eb.dir/build.make CMakeFiles/cmTC_3d2eb.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp'
+        Building C object CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o
+        /usr/bin/ccache  gcc   -v -o CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        Target: armv7-alpine-linux-musleabihf
+        Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,objc,go,fortran,ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (Alpine 14.2.0) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_d2f80.dir/'
+         /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d2f80.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic-armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mabi=aapcs-linux -mtls-dialect=gnu -mthumb -mlibarch=armv7-a+fp -march=armv7-a+fp -version -fdiagnostics-color=always -o /tmp/ccNOCKfj.s
+        GNU C17 (Alpine 14.2.0) version 14.2.0 (armv7-alpine-linux-musleabihf)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1-p1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/include/fortify
+         /usr/include
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include
+        End of search list.
+        Compiler executable checksum: 0fd982db05a837e0152065d2eba10cad
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_d2f80.dir/'
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/as -v -march=armv7-a+fp -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o /tmp/ccNOCKfj.s
+        GNU assembler version 2.44 (armv7-alpine-linux-musleabihf) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/
+        LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_3d2eb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d2eb.dir/link.txt --verbose=1
+        /usr/bin/ccache  gcc  -v -Wl,-v CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -o cmTC_3d2eb
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper
+        Target: armv7-alpine-linux-musleabihf
+        Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,objc,go,fortran,ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (Alpine 14.2.0) 
+        COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/
+        LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d2eb'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'cmTC_3d2eb.'
+         /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMLnlDO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_3d2eb /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -lssp_nonshared -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o
+        collect2 version 14.2.0
+        /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMLnlDO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_3d2eb /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -lssp_nonshared -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d2eb'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'cmTC_3d2eb.'
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/include/fortify]
+          add: [/usr/include]
+          add: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+        end of search list found
+        collapse include dir [/usr/include/fortify] ==> [/usr/include/fortify]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        collapse include dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include] ==> [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+        implicit include dirs: [/usr/include/fortify;/usr/include;/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d2eb/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3d2eb.dir/build.make CMakeFiles/cmTC_3d2eb.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-NiJkjp']
+        ignore line: [Building C object CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/ccache  gcc   -v -o CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [Target: armv7-alpine-linux-musleabihf]
+        ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ objc go fortran ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (Alpine 14.2.0) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_d2f80.dir/']
+        ignore line: [ /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/cc1 -quiet -v /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_d2f80.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic-armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mabi=aapcs-linux -mtls-dialect=gnu -mthumb -mlibarch=armv7-a+fp -march=armv7-a+fp -version -fdiagnostics-color=always -o /tmp/ccNOCKfj.s]
+        ignore line: [GNU C17 (Alpine 14.2.0) version 14.2.0 (armv7-alpine-linux-musleabihf)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1-p1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/include/fortify]
+        ignore line: [ /usr/include]
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: 0fd982db05a837e0152065d2eba10cad]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_d2f80.dir/']
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/as -v -march=armv7-a+fp -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o /tmp/ccNOCKfj.s]
+        ignore line: [GNU assembler version 2.44 (armv7-alpine-linux-musleabihf) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.o'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_d2f80.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_3d2eb]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d2eb.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/ccache  gcc  -v -Wl -v CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -o cmTC_3d2eb]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper]
+        ignore line: [Target: armv7-alpine-linux-musleabihf]
+        ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ objc go fortran ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (Alpine 14.2.0) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3d2eb'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'cmTC_3d2eb.']
+        link line: [ /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMLnlDO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_3d2eb /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -lssp_nonshared -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccMLnlDO.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-armhf.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3d2eb] ==> ignore
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMLnlDO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_3d2eb /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_3d2eb.dir/CMakeCCompilerABI.c.o -lssp_nonshared -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+        linker tool for 'C': /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld
+        collapse obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> [/usr/armv7-alpine-linux-musleabihf/lib]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> [/usr/lib]
+        implicit libs: [ssp_nonshared;gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o;/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0;/usr/armv7-alpine-linux-musleabihf/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_889c1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_889c1.dir/build.make CMakeFiles/cmTC_889c1.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl'
+        Building CXX object CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/ccache  g++   -v -o CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        Target: armv7-alpine-linux-musleabihf
+        Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,objc,go,fortran,ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (Alpine 14.2.0) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_093e0.dir/'
+         /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_093e0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic-armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mabi=aapcs-linux -mtls-dialect=gnu -mthumb -mlibarch=armv7-a+fp -march=armv7-a+fp -version -fdiagnostics-color=always -o /tmp/cceCPDjD.s
+        GNU C++17 (Alpine 14.2.0) version 14.2.0 (armv7-alpine-linux-musleabihf)
+        	compiled by GNU C version 14.2.0, GMP version 6.3.0, MPFR version 4.2.1-p1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/armv7-alpine-linux-musleabihf
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/backward
+         /usr/include/fortify
+         /usr/include
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include
+        End of search list.
+        Compiler executable checksum: d4c3fb811d841c6dc987edb8d33157de
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_093e0.dir/'
+         /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/as -v -march=armv7-a+fp -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o /tmp/cceCPDjD.s
+        GNU assembler version 2.44 (armv7-alpine-linux-musleabihf) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/
+        LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_889c1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_889c1.dir/link.txt --verbose=1
+        /usr/bin/ccache  g++  -v -Wl,-v CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_889c1
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper
+        Target: armv7-alpine-linux-musleabihf
+        Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,objc,go,fortran,ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (Alpine 14.2.0) 
+        COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/
+        LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_889c1' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'cmTC_889c1.'
+         /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpNmIiH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_889c1 /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o
+        collect2 version 14.2.0
+        /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpNmIiH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_889c1 /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_889c1' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'cmTC_889c1.'
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0]
+          add: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/armv7-alpine-linux-musleabihf]
+          add: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/backward]
+          add: [/usr/include/fortify]
+          add: [/usr/include]
+          add: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0] ==> [/usr/include/c++/14.2.0]
+        collapse include dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/armv7-alpine-linux-musleabihf] ==> [/usr/include/c++/14.2.0/armv7-alpine-linux-musleabihf]
+        collapse include dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/backward] ==> [/usr/include/c++/14.2.0/backward]
+        collapse include dir [/usr/include/fortify] ==> [/usr/include/fortify]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        collapse include dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include] ==> [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+        implicit include dirs: [/usr/include/c++/14.2.0;/usr/include/c++/14.2.0/armv7-alpine-linux-musleabihf;/usr/include/c++/14.2.0/backward;/usr/include/fortify;/usr/include;/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_889c1/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_889c1.dir/build.make CMakeFiles/cmTC_889c1.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PBNLgl']
+        ignore line: [Building CXX object CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/ccache  g++   -v -o CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [Target: armv7-alpine-linux-musleabihf]
+        ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ objc go fortran ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (Alpine 14.2.0) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_093e0.dir/']
+        ignore line: [ /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_093e0.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic-armv7-a -mfloat-abi=hard -mfpu=vfpv3-d16 -mabi=aapcs-linux -mtls-dialect=gnu -mthumb -mlibarch=armv7-a+fp -march=armv7-a+fp -version -fdiagnostics-color=always -o /tmp/cceCPDjD.s]
+        ignore line: [GNU C++17 (Alpine 14.2.0) version 14.2.0 (armv7-alpine-linux-musleabihf)]
+        ignore line: [	compiled by GNU C version 14.2.0  GMP version 6.3.0  MPFR version 4.2.1-p1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0]
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/armv7-alpine-linux-musleabihf]
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../include/c++/14.2.0/backward]
+        ignore line: [ /usr/include/fortify]
+        ignore line: [ /usr/include]
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d4c3fb811d841c6dc987edb8d33157de]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_093e0.dir/']
+        ignore line: [ /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/as -v -march=armv7-a+fp -mfloat-abi=hard -mfpu=vfpv3-d16 -meabi=5 -o CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o /tmp/cceCPDjD.s]
+        ignore line: [GNU assembler version 2.44 (armv7-alpine-linux-musleabihf) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-v' '-c' '-o' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.o' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'CMakeFiles/cmTC_093e0.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_889c1]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_889c1.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/ccache  g++  -v -Wl -v CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_889c1]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper]
+        ignore line: [Target: armv7-alpine-linux-musleabihf]
+        ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ objc go fortran ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (Alpine 14.2.0) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_889c1' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-dumpdir' 'cmTC_889c1.']
+        link line: [ /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpNmIiH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_889c1 /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccpNmIiH.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-armhf.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_889c1] ==> ignore
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o]
+          arg [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o] ==> obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+        ignore line: [collect2 version 14.2.0]
+        ignore line: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpNmIiH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_889c1 /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. -v CMakeFiles/cmTC_889c1.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lssp_nonshared -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+        linker tool for 'CXX': /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld
+        collapse obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o] ==> [/usr/lib/Scrt1.o]
+        collapse obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o] ==> [/usr/lib/crti.o]
+        collapse obj [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o] ==> [/usr/lib/crtn.o]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> [/usr/armv7-alpine-linux-musleabihf/lib]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;ssp_nonshared;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib/Scrt1.o;/usr/lib/crti.o;/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o;/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o;/usr/lib/crtn.o]
+        implicit dirs: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0;/usr/armv7-alpine-linux-musleabihf/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is AppleClang using "--version" did not match "(Apple (clang|LLVM) version)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is Clang using "--version" did not match "(clang version)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMClang using "--version" did not match "armclang":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is OrangeC using "--version" did not match "occ \\(OrangeC\\) Version":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is HP using "-V" did not match "HP C":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is Intel using "--version" did not match "(ICC)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is IntelLLVM using "--version" did not match "(Intel[^
+      ]+oneAPI)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is SunPro using "-V" did not match "Sun C":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is XL using "-qversion" did not match "XL C":
+      /usr/bin/ccache: unrecognized option: q
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is MSVC using "-?" did not match "Microsoft":
+      /usr/bin/ccache: unrecognized option: ?
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is TI using "-h" did not match "Texas Instruments":
+      Usage:
+          ccache [ccache options]
+          ccache [KEY=VALUE ...] compiler [compiler options]
+          compiler [compiler options]
+      
+          The first form takes options described below. The second form invokes the
+          compiler, optionally using configuration options from KEY=VALUE arguments.
+          In the third form, ccache is masquerading as the compiler.
+      
+      Common options:
+          -c, --cleanup              delete not recently used files and recalculate
+                                     size counters (normally not needed as this is
+                                     done automatically)
+          -C, --clear                clear the cache completely (except configuration)
+              --config-path PATH     operate on configuration file PATH instead of the
+                                     default
+          -d, --dir PATH             operate on cache directory PATH instead of the
+                                     default
+              --evict-namespace NAMESPACE
+                                     remove files created in namespace NAMESPACE
+              --evict-older-than AGE remove files used less recently than AGE
+                                     (unsigned integer with a d (days) or s (seconds)
+                                     suffix)
+          -F, --max-files NUM        set maximum number of files in cache to NUM (use
+                                     0 for no limit)
+          -M, --max-size SIZE        set maximum size of cache to SIZE (use 0 for no
+                                     limit); available suffixes: kB, MB, GB, TB
+                                     (decimal) and KiB, MiB, GiB, TiB (binary);
+                                     default suffix: GiB
+          -X, --recompress LEVEL     recompress the cache to level LEVEL (integer or
+                                     "uncompressed")
+              --recompress-threads THREADS
+                                     use up to THREADS threads when recompressing the
+                                     cache; default: number of CPUs
+          -o, --set-config KEY=VALUE set configuration option KEY to value VALUE in the
+                                     configuration file
+          -x, --show-compression     show compression statistics
+          -p, --show-config          show current configuration options in
+                                     human-readable format
+              --show-log-stats       print statistics counters from the stats log
+                                     in human-readable format
+          -s, --show-stats           show summary of configuration and statistics
+                                     counters in human-readable format (use
+                                     -v/--verbose once or twice for more details)
+          -v, --verbose              increase verbosity
+          -z, --zero-stats           zero statistics counters
+      
+          -h, --help                 print this help text
+          -V, --version              print version and copyright information
+      
+      Options for remote file-based storage:
+              --trim-dir PATH        remove not recently used files from directory
+                                     PATH until it is at most the size specified by
+                                     --trim-max-size (note: don't use this option to
+                                     trim the local cache)
+              --trim-max-size SIZE   specify the maximum size for --trim-dir (use 0 for
+                                     no limit); available suffixes: kB, MB, GB, TB
+                                     (decimal) and KiB, MiB, GiB, TiB (binary);
+                                     default suffix: GiB
+              --trim-method METHOD   specify the method (atime or mtime) for
+                                     --trim-dir; default: atime
+              --trim-recompress LEVEL
+                                     recompress to level LEVEL (integer or
+                                     "uncompressed")
+              --trim-recompress-threads THREADS
+                                     use up to THREADS threads when recompressing;
+                                     default: number of CPUs
+      
+      Options for scripting or debugging:
+              --checksum-file PATH   print the checksum (128 bit XXH3) of the file at
+                                     PATH
+              --extract-result PATH  extract file data stored in result file at PATH
+                                     to the current working directory
+              --format FORMAT        specify format for --print-log-stats and
+                                     --print-stats (tab, json); default: tab
+          -k, --get-config KEY       print the value of configuration key KEY
+              --hash-file PATH       print the hash (160 bit BLAKE3) of the file at
+                                     PATH
+              --inspect PATH         print result/manifest file at PATH in
+                                     human-readable format
+              --print-log-stats      print statistics counter IDs and corresponding
+                                     values from the stats log in machine-parsable
+                                     format
+              --print-stats          print statistics counter IDs and corresponding
+                                     values in machine-parsable format
+              --print-version        print version only
+      
+      See also the manual on <https://ccache.dev/documentation.html>.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is TIClang using "--version" did not match "(TI (.*) Clang Compiler)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is IAR using "" did not match "IAR Assembler":
+      Usage:
+          ccache [ccache options]
+          ccache [KEY=VALUE ...] compiler [compiler options]
+          compiler [compiler options]
+      
+          The first form takes options described below. The second form invokes the
+          compiler, optionally using configuration options from KEY=VALUE arguments.
+          In the third form, ccache is masquerading as the compiler.
+      
+      Common options:
+          -c, --cleanup              delete not recently used files and recalculate
+                                     size counters (normally not needed as this is
+                                     done automatically)
+          -C, --clear                clear the cache completely (except configuration)
+              --config-path PATH     operate on configuration file PATH instead of the
+                                     default
+          -d, --dir PATH             operate on cache directory PATH instead of the
+                                     default
+              --evict-namespace NAMESPACE
+                                     remove files created in namespace NAMESPACE
+              --evict-older-than AGE remove files used less recently than AGE
+                                     (unsigned integer with a d (days) or s (seconds)
+                                     suffix)
+          -F, --max-files NUM        set maximum number of files in cache to NUM (use
+                                     0 for no limit)
+          -M, --max-size SIZE        set maximum size of cache to SIZE (use 0 for no
+                                     limit); available suffixes: kB, MB, GB, TB
+                                     (decimal) and KiB, MiB, GiB, TiB (binary);
+                                     default suffix: GiB
+          -X, --recompress LEVEL     recompress the cache to level LEVEL (integer or
+                                     "uncompressed")
+              --recompress-threads THREADS
+                                     use up to THREADS threads when recompressing the
+                                     cache; default: number of CPUs
+          -o, --set-config KEY=VALUE set configuration option KEY to value VALUE in the
+                                     configuration file
+          -x, --show-compression     show compression statistics
+          -p, --show-config          show current configuration options in
+                                     human-readable format
+              --show-log-stats       print statistics counters from the stats log
+                                     in human-readable format
+          -s, --show-stats           show summary of configuration and statistics
+                                     counters in human-readable format (use
+                                     -v/--verbose once or twice for more details)
+          -v, --verbose              increase verbosity
+          -z, --zero-stats           zero statistics counters
+      
+          -h, --help                 print this help text
+          -V, --version              print version and copyright information
+      
+      Options for remote file-based storage:
+              --trim-dir PATH        remove not recently used files from directory
+                                     PATH until it is at most the size specified by
+                                     --trim-max-size (note: don't use this option to
+                                     trim the local cache)
+              --trim-max-size SIZE   specify the maximum size for --trim-dir (use 0 for
+                                     no limit); available suffixes: kB, MB, GB, TB
+                                     (decimal) and KiB, MiB, GiB, TiB (binary);
+                                     default suffix: GiB
+              --trim-method METHOD   specify the method (atime or mtime) for
+                                     --trim-dir; default: atime
+              --trim-recompress LEVEL
+                                     recompress to level LEVEL (integer or
+                                     "uncompressed")
+              --trim-recompress-threads THREADS
+                                     use up to THREADS threads when recompressing;
+                                     default: number of CPUs
+      
+      Options for scripting or debugging:
+              --checksum-file PATH   print the checksum (128 bit XXH3) of the file at
+                                     PATH
+              --extract-result PATH  extract file data stored in result file at PATH
+                                     to the current working directory
+              --format FORMAT        specify format for --print-log-stats and
+                                     --print-stats (tab, json); default: tab
+          -k, --get-config KEY       print the value of configuration key KEY
+              --hash-file PATH       print the hash (160 bit BLAKE3) of the file at
+                                     PATH
+              --inspect PATH         print result/manifest file at PATH in
+                                     human-readable format
+              --print-log-stats      print statistics counter IDs and corresponding
+                                     values from the stats log in machine-parsable
+                                     format
+              --print-stats          print statistics counter IDs and corresponding
+                                     values in machine-parsable format
+              --print-version        print version only
+      
+      See also the manual on <https://ccache.dev/documentation.html>.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is ARMCC using "" did not match "(ARM Compiler)|(ARM Assembler)|(Arm Compiler)":
+      Usage:
+          ccache [ccache options]
+          ccache [KEY=VALUE ...] compiler [compiler options]
+          compiler [compiler options]
+      
+          The first form takes options described below. The second form invokes the
+          compiler, optionally using configuration options from KEY=VALUE arguments.
+          In the third form, ccache is masquerading as the compiler.
+      
+      Common options:
+          -c, --cleanup              delete not recently used files and recalculate
+                                     size counters (normally not needed as this is
+                                     done automatically)
+          -C, --clear                clear the cache completely (except configuration)
+              --config-path PATH     operate on configuration file PATH instead of the
+                                     default
+          -d, --dir PATH             operate on cache directory PATH instead of the
+                                     default
+              --evict-namespace NAMESPACE
+                                     remove files created in namespace NAMESPACE
+              --evict-older-than AGE remove files used less recently than AGE
+                                     (unsigned integer with a d (days) or s (seconds)
+                                     suffix)
+          -F, --max-files NUM        set maximum number of files in cache to NUM (use
+                                     0 for no limit)
+          -M, --max-size SIZE        set maximum size of cache to SIZE (use 0 for no
+                                     limit); available suffixes: kB, MB, GB, TB
+                                     (decimal) and KiB, MiB, GiB, TiB (binary);
+                                     default suffix: GiB
+          -X, --recompress LEVEL     recompress the cache to level LEVEL (integer or
+                                     "uncompressed")
+              --recompress-threads THREADS
+                                     use up to THREADS threads when recompressing the
+                                     cache; default: number of CPUs
+          -o, --set-config KEY=VALUE set configuration option KEY to value VALUE in the
+                                     configuration file
+          -x, --show-compression     show compression statistics
+          -p, --show-config          show current configuration options in
+                                     human-readable format
+              --show-log-stats       print statistics counters from the stats log
+                                     in human-readable format
+          -s, --show-stats           show summary of configuration and statistics
+                                     counters in human-readable format (use
+                                     -v/--verbose once or twice for more details)
+          -v, --verbose              increase verbosity
+          -z, --zero-stats           zero statistics counters
+      
+          -h, --help                 print this help text
+          -V, --version              print version and copyright information
+      
+      Options for remote file-based storage:
+              --trim-dir PATH        remove not recently used files from directory
+                                     PATH until it is at most the size specified by
+                                     --trim-max-size (note: don't use this option to
+                                     trim the local cache)
+              --trim-max-size SIZE   specify the maximum size for --trim-dir (use 0 for
+                                     no limit); available suffixes: kB, MB, GB, TB
+                                     (decimal) and KiB, MiB, GiB, TiB (binary);
+                                     default suffix: GiB
+              --trim-method METHOD   specify the method (atime or mtime) for
+                                     --trim-dir; default: atime
+              --trim-recompress LEVEL
+                                     recompress to level LEVEL (integer or
+                                     "uncompressed")
+              --trim-recompress-threads THREADS
+                                     use up to THREADS threads when recompressing;
+                                     default: number of CPUs
+      
+      Options for scripting or debugging:
+              --checksum-file PATH   print the checksum (128 bit XXH3) of the file at
+                                     PATH
+              --extract-result PATH  extract file data stored in result file at PATH
+                                     to the current working directory
+              --format FORMAT        specify format for --print-log-stats and
+                                     --print-stats (tab, json); default: tab
+          -k, --get-config KEY       print the value of configuration key KEY
+              --hash-file PATH       print the hash (160 bit BLAKE3) of the file at
+                                     PATH
+              --inspect PATH         print result/manifest file at PATH in
+                                     human-readable format
+              --print-log-stats      print statistics counter IDs and corresponding
+                                     values from the stats log in machine-parsable
+                                     format
+              --print-stats          print statistics counter IDs and corresponding
+                                     values in machine-parsable format
+              --print-version        print version only
+      
+      See also the manual on <https://ccache.dev/documentation.html>.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is NASM using "-v" did not match "(NASM version)":
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is YASM using "--version" did not match "(yasm)":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is ADSP using "-version" did not match "Analog Devices":
+      /usr/bin/ccache: unrecognized option: e
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:1250 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "ggml/CMakeLists.txt:2 (project)"
+    message: |
+      Checking whether the ASM compiler is QCC using "-V" did not match "gcc_nto":
+      ccache version 4.11.3
+      Features: file-storage http-storage redis+unix-storage redis-storage
+      
+      Copyright (C) 2002-2007 Andrew Tridgell
+      Copyright (C) 2009-2025 Joel Rosdahl and other contributors
+      
+      See <https://ccache.dev/credits.html> for a complete list of contributors.
+      
+      This program is free software; you can redistribute it and/or modify it under
+      the terms of the GNU General Public License as published by the Free Software
+      Foundation; either version 3 of the License, or (at your option) any later
+      version.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "ggml/CMakeLists.txt:275 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-AghgdI"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-AghgdI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-AghgdI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca71/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ca71.dir/build.make CMakeFiles/cmTC_8ca71.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-AghgdI'
+        Building C object CMakeFiles/cmTC_8ca71.dir/src.c.o
+        /usr/bin/ccache  gcc -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu11 -o CMakeFiles/cmTC_8ca71.dir/src.c.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-AghgdI/src.c
+        Linking C executable cmTC_8ca71
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca71.dir/link.txt --verbose=1
+        /usr/bin/ccache  gcc CMakeFiles/cmTC_8ca71.dir/src.c.o -o cmTC_8ca71
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-AghgdI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP compiler info"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_C_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cabf9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cabf9.dir/build.make CMakeFiles/cmTC_cabf9.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP'
+        Building C object CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o
+        /usr/bin/ccache  gcc   -fopenmp -std=gnu11 -o CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP/OpenMPTryFlag.c
+        Linking C executable cmTC_cabf9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cabf9.dir/link.txt --verbose=1
+        /usr/bin/ccache  gcc  -fopenmp -v CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o -o cmTC_cabf9
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/gcc
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper
+        Target: armv7-alpine-linux-musleabihf
+        Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,objc,go,fortran,ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (Alpine 14.2.0) 
+        COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/
+        LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_cabf9'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-pthread' '-dumpdir' 'cmTC_cabf9.'
+         /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCFNICF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_cabf9 /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o -lgomp -lssp_nonshared -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_cabf9'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-pthread' '-dumpdir' 'cmTC_cabf9.'
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:296 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    message: |
+      Parsed C OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cabf9/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_cabf9.dir/build.make CMakeFiles/cmTC_cabf9.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP']
+        ignore line: [Building C object CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o]
+        ignore line: [/usr/bin/ccache  gcc   -fopenmp -std=gnu11 -o CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-oNknhP/OpenMPTryFlag.c]
+        ignore line: [Linking C executable cmTC_cabf9]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cabf9.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/ccache  gcc  -fopenmp -v CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o -o cmTC_cabf9]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/gcc]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper]
+        ignore line: [Target: armv7-alpine-linux-musleabihf]
+        ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ objc go fortran ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (Alpine 14.2.0) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_cabf9'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-pthread' '-dumpdir' 'cmTC_cabf9.']
+        link line: [ /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccCFNICF.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_cabf9 /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o -lgomp -lssp_nonshared -lgcc --push-state --as-needed -lgcc_s --pop-state -lpthread -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccCFNICF.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-armhf.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_cabf9] ==> ignore
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..]
+          arg [CMakeFiles/cmTC_cabf9.dir/OpenMPTryFlag.c.o] ==> ignore
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> [/usr/armv7-alpine-linux-musleabihf/lib]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> [/usr/lib]
+        implicit libs: [gomp;ssp_nonshared;gcc;gcc_s;pthread;c;gcc;gcc_s]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0;/usr/armv7-alpine-linux-musleabihf/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:252 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmp"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a35b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0a35b.dir/build.make CMakeFiles/cmTC_0a35b.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP'
+        Building CXX object CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o
+        /usr/bin/ccache  g++   -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP/OpenMPTryFlag.cpp
+        Linking CXX executable cmTC_0a35b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a35b.dir/link.txt --verbose=1
+        /usr/bin/ccache  g++  -fopenmp -v CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o -o cmTC_0a35b
+        Using built-in specs.
+        COLLECT_GCC=/usr/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper
+        Target: armv7-alpine-linux-musleabihf
+        Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c,c++,objc,go,fortran,ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0'
+        Thread model: posix
+        Supported LTO compression algorithms: zlib
+        gcc version 14.2.0 (Alpine 14.2.0) 
+        COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/
+        LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/
+        Reading specs from /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/libgomp.spec
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_0a35b' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-pthread' '-dumpdir' 'cmTC_0a35b.'
+         /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIBlomG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_0a35b /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lssp_nonshared -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o
+        COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_0a35b' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-pthread' '-dumpdir' 'cmTC_0a35b.'
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:296 (message)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:522 (_OPENMP_GET_FLAGS)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    message: |
+      Parsed CXX OpenMP implicit link information from above output:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0a35b/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_0a35b.dir/build.make CMakeFiles/cmTC_0a35b.dir/build]
+        ignore line: [gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP']
+        ignore line: [Building CXX object CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o]
+        ignore line: [/usr/bin/ccache  g++   -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-KcpBHP/OpenMPTryFlag.cpp]
+        ignore line: [Linking CXX executable cmTC_0a35b]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a35b.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/ccache  g++  -fopenmp -v CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o -o cmTC_0a35b]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/usr/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper]
+        ignore line: [Target: armv7-alpine-linux-musleabihf]
+        ignore line: [Configured with: /home/buildozer/aports/main/gcc/src/gcc-14.2.0/configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --build=armv7-alpine-linux-musleabihf --host=armv7-alpine-linux-musleabihf --target=armv7-alpine-linux-musleabihf --enable-checking=release --disable-cet --disable-fixed-point --disable-libstdcxx-pch --disable-multilib --disable-nls --disable-werror --disable-symvers --enable-__cxa_atexit --enable-default-pie --enable-default-ssp --enable-languages=c c++ objc go fortran ada --enable-link-serialization=2 --enable-linker-build-id --with-arch=armv7-a --with-tune=generic-armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-abi=aapcs-linux --with-mode=thumb --disable-libquadmath --disable-libssp --disable-libsanitizer --enable-shared --enable-threads --enable-tls --disable-libitm --with-bugurl=https://gitlab.alpinelinux.org/alpine/aports/-/issues --with-system-zlib --with-linker-hash-style=gnu --with-pkgversion='Alpine 14.2.0']
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib]
+        ignore line: [gcc version 14.2.0 (Alpine 14.2.0) ]
+        ignore line: [COMPILER_PATH=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/libexec/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/bin/]
+        ignore line: [LIBRARY_PATH=/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib/:/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../:/lib/:/usr/lib/]
+        ignore line: [Reading specs from /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/libgomp.spec]
+        ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-o' 'cmTC_0a35b' '-shared-libgcc'  '-mtune=generic-armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mabi=aapcs-linux' '-mtls-dialect=gnu' '-mthumb' '-mlibarch=armv7-a+fp' '-march=armv7-a+fp' '-pthread' '-dumpdir' 'cmTC_0a35b.']
+        link line: [ /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2 -plugin /usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccIBlomG.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -dynamic-linker /lib/ld-musl-armhf.so.1 -X --as-needed -m armelf_linux_eabi -pie -z now -o cmTC_0a35b /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../Scrt1.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crti.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtbeginS.o -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0 -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib -L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../.. CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm -lgomp -lssp_nonshared -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/crtendS.o /usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../crtn.o]
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/libexec/gcc/armv7-alpine-linux-musleabihf/14.2.0/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccIBlomG.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-musl-armhf.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-m] ==> ignore
+          arg [armelf_linux_eabi] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-znow] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_0a35b] ==> ignore
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib]
+          arg [-L/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..]
+          arg [CMakeFiles/cmTC_0a35b.dir/OpenMPTryFlag.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgomp] ==> lib [gomp]
+          arg [-lssp_nonshared] ==> lib [ssp_nonshared]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lpthread] ==> lib [pthread]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0] ==> [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../../../armv7-alpine-linux-musleabihf/lib] ==> [/usr/armv7-alpine-linux-musleabihf/lib]
+        collapse library dir [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0/../../..] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gomp;ssp_nonshared;gcc_s;gcc;pthread;c;gcc_s;gcc]
+        implicit objs: []
+        implicit dirs: [/usr/lib/gcc/armv7-alpine-linux-musleabihf/14.2.0;/usr/armv7-alpine-linux-musleabihf/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:456 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:596 (_OPENMP_GET_SPEC_DATE)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting C OpenMP version"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PdpbjP"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PdpbjP"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_C_"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PdpbjP'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_96193/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_96193.dir/build.make CMakeFiles/cmTC_96193.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PdpbjP'
+        Building C object CMakeFiles/cmTC_96193.dir/OpenMPCheckVersion.c.o
+        /usr/bin/ccache  gcc   -fopenmp -std=gnu11 -o CMakeFiles/cmTC_96193.dir/OpenMPCheckVersion.c.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PdpbjP/OpenMPCheckVersion.c
+        Linking C executable cmTC_96193
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96193.dir/link.txt --verbose=1
+        /usr/bin/ccache  gcc  -fopenmp CMakeFiles/cmTC_96193.dir/OpenMPCheckVersion.c.o -o cmTC_96193
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-PdpbjP'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:456 (try_compile)"
+      - "/usr/share/cmake/Modules/FindOpenMP.cmake:596 (_OPENMP_GET_SPEC_DATE)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:71 (find_package)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-CHEfce"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-CHEfce"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-CHEfce'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_91686/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_91686.dir/build.make CMakeFiles/cmTC_91686.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-CHEfce'
+        Building CXX object CMakeFiles/cmTC_91686.dir/OpenMPCheckVersion.cpp.o
+        /usr/bin/ccache  g++   -fopenmp -std=gnu++17 -o CMakeFiles/cmTC_91686.dir/OpenMPCheckVersion.cpp.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-CHEfce/OpenMPCheckVersion.cpp
+        Linking CXX executable cmTC_91686
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_91686.dir/link.txt --verbose=1
+        /usr/bin/ccache  g++  -fopenmp CMakeFiles/cmTC_91686.dir/OpenMPCheckVersion.cpp.o -o cmTC_91686
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-CHEfce'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:111 (check_cxx_compiler_flag)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-FpmeNm"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-FpmeNm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-FpmeNm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_936bc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_936bc.dir/build.make CMakeFiles/cmTC_936bc.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-FpmeNm'
+        Building CXX object CMakeFiles/cmTC_936bc.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_COMPILER_SUPPORTS_FP16_FORMAT_I3E  -std=gnu++17   -mfp16-format=ieee -o CMakeFiles/cmTC_936bc.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-FpmeNm/src.cxx
+        Linking CXX executable cmTC_936bc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_936bc.dir/link.txt --verbose=1
+        /usr/bin/ccache  g++ CMakeFiles/cmTC_936bc.dir/src.cxx.o -o cmTC_936bc
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-FpmeNm'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:140 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:153 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_dotprod"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-gJcFaO"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-gJcFaO"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_dotprod_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-gJcFaO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_10018/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_10018.dir/build.make CMakeFiles/cmTC_10018.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-gJcFaO'
+        Building CXX object CMakeFiles/cmTC_10018.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_dotprod  -mcpu=native+dotprod -std=gnu++17 -o CMakeFiles/cmTC_10018.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-gJcFaO/src.cxx
+        g++: error: unrecognized -mcpu target: native+dotprod
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_10018.dir/build.make:81: CMakeFiles/cmTC_10018.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-gJcFaO'
+        gmake: *** [Makefile:134: cmTC_10018/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_dotprod_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:145 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:153 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_nodotprod"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LJCkHo"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LJCkHo"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_nodotprod"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LJCkHo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77def/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77def.dir/build.make CMakeFiles/cmTC_77def.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LJCkHo'
+        Building CXX object CMakeFiles/cmTC_77def.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_nodotprod  -mcpu=native+nodotprod -std=gnu++17 -o CMakeFiles/cmTC_77def.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LJCkHo/src.cxx
+        g++: error: unrecognized -mcpu target: native+nodotprod
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_77def.dir/build.make:81: CMakeFiles/cmTC_77def.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LJCkHo'
+        gmake: *** [Makefile:134: cmTC_77def/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:140 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:154 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_i8mm"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-hpfoKa"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-hpfoKa"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_i8mm_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-hpfoKa'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ea6c3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_ea6c3.dir/build.make CMakeFiles/cmTC_ea6c3.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-hpfoKa'
+        Building CXX object CMakeFiles/cmTC_ea6c3.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_i8mm  -mcpu=native+i8mm -std=gnu++17 -o CMakeFiles/cmTC_ea6c3.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-hpfoKa/src.cxx
+        g++: error: unrecognized -mcpu target: native+i8mm
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_ea6c3.dir/build.make:81: CMakeFiles/cmTC_ea6c3.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-hpfoKa'
+        gmake: *** [Makefile:134: cmTC_ea6c3/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_i8mm_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:145 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:154 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_noi8mm"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-GjDNfD"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-GjDNfD"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_noi8mm"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-GjDNfD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77a10/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77a10.dir/build.make CMakeFiles/cmTC_77a10.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-GjDNfD'
+        Building CXX object CMakeFiles/cmTC_77a10.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_noi8mm  -mcpu=native+noi8mm -std=gnu++17 -o CMakeFiles/cmTC_77a10.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-GjDNfD/src.cxx
+        g++: error: unrecognized -mcpu target: native+noi8mm
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_77a10.dir/build.make:81: CMakeFiles/cmTC_77a10.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-GjDNfD'
+        gmake: *** [Makefile:134: cmTC_77a10/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:140 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:155 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_sve"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dfddfh"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dfddfh"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_sve_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dfddfh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_80134/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_80134.dir/build.make CMakeFiles/cmTC_80134.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dfddfh'
+        Building CXX object CMakeFiles/cmTC_80134.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_sve  -mcpu=native+sve -std=gnu++17 -o CMakeFiles/cmTC_80134.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dfddfh/src.cxx
+        g++: error: unrecognized -mcpu target: native+sve
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native; did you mean 'native'?
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_80134.dir/build.make:81: CMakeFiles/cmTC_80134.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dfddfh'
+        gmake: *** [Makefile:134: cmTC_80134/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_sve_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:145 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:155 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_nosve"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-JnOIea"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-JnOIea"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_nosve"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-JnOIea'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e8ddf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e8ddf.dir/build.make CMakeFiles/cmTC_e8ddf.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-JnOIea'
+        Building CXX object CMakeFiles/cmTC_e8ddf.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_nosve  -mcpu=native+nosve -std=gnu++17 -o CMakeFiles/cmTC_e8ddf.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-JnOIea/src.cxx
+        g++: error: unrecognized -mcpu target: native+nosve
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_e8ddf.dir/build.make:81: CMakeFiles/cmTC_e8ddf.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-JnOIea'
+        gmake: *** [Makefile:134: cmTC_e8ddf/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceRuns.cmake:99 (try_run)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceRuns.cmake:52 (cmake_check_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:140 (check_cxx_source_runs)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:156 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_sme"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dMmlPE"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dMmlPE"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_sme_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dMmlPE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_502c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_502c9.dir/build.make CMakeFiles/cmTC_502c9.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dMmlPE'
+        Building CXX object CMakeFiles/cmTC_502c9.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_sme  -mcpu=native+sme -std=gnu++17 -o CMakeFiles/cmTC_502c9.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dMmlPE/src.cxx
+        g++: error: unrecognized -mcpu target: native+sme
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native; did you mean 'native'?
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_502c9.dir/build.make:81: CMakeFiles/cmTC_502c9.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-dMmlPE'
+        gmake: *** [Makefile:134: cmTC_502c9/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "GGML_MACHINE_SUPPORTS_sme_EXITCODE"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:145 (check_cxx_source_compiles)"
+      - "ggml/src/ggml-cpu/CMakeLists.txt:156 (check_arm_feature)"
+      - "ggml/src/CMakeLists.txt:390 (ggml_add_cpu_backend_variant_impl)"
+    checks:
+      - "Performing Test GGML_MACHINE_SUPPORTS_nosme"
+    directories:
+      source: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LOiLhg"
+      binary: "/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LOiLhg"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/root/llama.cpp/cmake/"
+    buildResult:
+      variable: "GGML_MACHINE_SUPPORTS_nosme"
+      cached: true
+      stdout: |
+        Change Dir: '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LOiLhg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6bac9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6bac9.dir/build.make CMakeFiles/cmTC_6bac9.dir/build
+        gmake[1]: Entering directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LOiLhg'
+        Building CXX object CMakeFiles/cmTC_6bac9.dir/src.cxx.o
+        /usr/bin/ccache  g++ -DGGML_MACHINE_SUPPORTS_nosme  -mcpu=native+nosme -std=gnu++17 -o CMakeFiles/cmTC_6bac9.dir/src.cxx.o -c /root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LOiLhg/src.cxx
+        g++: error: unrecognized -mcpu target: native+nosme
+        g++: note: valid arguments are: arm8 arm810 strongarm strongarm110 fa526 fa626 arm7tdmi arm7tdmi-s arm710t arm720t arm740t arm9 arm9tdmi arm920t arm920 arm922t arm940t ep9312 arm10tdmi arm1020t arm9e arm946e-s arm966e-s arm968e-s arm10e arm1020e arm1022e xscale iwmmxt iwmmxt2 fa606te fa626te fmp626 fa726te arm926ej-s arm1026ej-s arm1136j-s arm1136jf-s arm1176jz-s arm1176jzf-s mpcorenovfp mpcore arm1156t2-s arm1156t2f-s cortex-m1 cortex-m0 cortex-m0plus cortex-m1.small-multiply cortex-m0.small-multiply cortex-m0plus.small-multiply generic-armv7-a cortex-a5 cortex-a7 cortex-a8 cortex-a9 cortex-a12 cortex-a15 cortex-a17 cortex-r4 cortex-r4f cortex-r5 cortex-r7 cortex-r8 cortex-m7 cortex-m4 cortex-m3 marvell-pj4 cortex-a15.cortex-a7 cortex-a17.cortex-a7 cortex-a32 cortex-a35 cortex-a53 cortex-a57 cortex-a72 cortex-a73 exynos-m1 xgene1 cortex-a57.cortex-a53 cortex-a72.cortex-a53 cortex-a73.cortex-a35 cortex-a73.cortex-a53 cortex-a55 cortex-a75 cortex-a76 cortex-a76ae cortex-a77 cortex-a78 cortex-a78ae cortex-a78c cortex-a710 cortex-x1 cortex-x1c neoverse-n1 cortex-a75.cortex-a55 cortex-a76.cortex-a55 neoverse-v1 neoverse-n2 cortex-m23 cortex-m33 cortex-m35p cortex-m52 cortex-m55 star-mc1 cortex-m85 cortex-r52 cortex-r52plus native
+        g++: error: missing argument to '-march='
+        gmake[1]: *** [CMakeFiles/cmTC_6bac9.dir/build.make:81: CMakeFiles/cmTC_6bac9.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/root/llama.cpp/armv7/build/CMakeFiles/CMakeScratch/TryCompile-LOiLhg'
+        gmake: *** [Makefile:134: cmTC_6bac9/fast] Error 2
+        
+      exitCode: 2
+...
