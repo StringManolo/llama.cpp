@@ -1,0 +1,1 @@
+/usr/bin/ccache  g++ -fPIC -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/ggml.dir/link.d -shared -Wl,-soname,libggml.so -o ../../bin/libggml.so "CMakeFiles/ggml.dir/ggml-backend-reg.cpp.o"  -Wl,-rpath,/root/llama.cpp/armv7/build/bin: -ldl ../../bin/libggml-cpu.so ../../bin/libggml-base.so

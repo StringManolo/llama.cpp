@@ -1,0 +1,1 @@
+/usr/bin/ccache  g++ -O3 -DNDEBUG -Wl,--dependency-file=CMakeFiles/llama-batched.dir/link.d "CMakeFiles/llama-batched.dir/batched.cpp.o" -o ../../bin/llama-batched  -Wl,-rpath,/root/llama.cpp/armv7/build/bin: ../../common/libcommon.a ../../bin/libllama.so ../../bin/libggml.so ../../bin/libggml-cpu.so ../../bin/libggml-base.so /usr/lib/libcurl.so
