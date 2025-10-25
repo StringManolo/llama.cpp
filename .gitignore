@@ -152,3 +152,12 @@ poetry.toml
 # IDE
 *.code-workspace
 .windsurf/
+
+#ARMv7
+armv7/build/
+armv7/models/
+armv7/venv/
+armv7/hf-venv/
+armv7/*.gguf
+armv7/*.pyc
+armv7/__pycache__/
