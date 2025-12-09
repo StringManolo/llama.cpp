@@ -13,7 +13,11 @@ LLM inference in C/C++
 
 ## EXTRA FOR ARMV7
 
-This fork of llama.cpp includes scripts for armv7. Alongside this scripts that allow you to make your own build, a premade build is include (this is a list of precompiled for Alpine Linux Armv7 in a Proot-Distro Termux enviroment). Find them at armv7/build/
+This fork of llama.cpp includes scripts for armv7. Alongside this scripts that allow you to make your own build, a premade build is included (this is a list of precompiled for Alpine Linux Armv7 in a Proot-Distro Termux enviroment). Find them at armv7/build/
+
+## EXTRA FOR ARM64
+
+Same as ARMV7 but for Debian instead of Alpine.
 
 ## Recent API changes
 
