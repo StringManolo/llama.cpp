@@ -165,3 +165,24 @@ armv7/hf-venv/
 armv7/*.gguf
 armv7/*.pyc
 armv7/__pycache__/
+
+# Artefactos de compilación (se regeneran; los binarios de armv7/build/bin/ se conservan)
+armv7/build/CMakeFiles/
+armv7/build/CMakeCache.txt
+armv7/build/Makefile
+armv7/build/cmake_install.cmake
+armv7/build/CTestTestfile.cmake
+armv7/build/Testing/
+armv7/build/*.cmake
+armv7/build/*.pc
+armv7/build/**/*.o
+armv7/build/**/*.a
+armv7/build/**/*.obj
+
+# aarch64: se recompila, no se conserva nada del build
+aarch64/debian/build/
+aarch64/debian/models/
+
+# Modelos de test
+armv7/alpine/models/
+*.gguf
